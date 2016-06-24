@@ -21,7 +21,7 @@
 	<h1>EntEr TECHWORLD</h1>
 	</font>
 					<font color="white"> 
-	Username *: <p><input type="username" name="username" /></p>
+	Username *: <p><input path ="username" /></p>
 	 
 	Password *:<p> <input type="password" name="pwd" /></p>
 	 

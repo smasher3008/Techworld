@@ -21,11 +21,11 @@ public class User implements Serializable {
 	
 	
 	public String getUsername() {
-		return Username;
+		return username;
 	}
 
 	public void setUsername(String username) {
-		Username = username;
+		this.username = username;
 	}
 
 	public String getEmail() {
@@ -68,7 +68,7 @@ public class User implements Serializable {
 		Address = address;
 	}
 
-	private String Username;
+	private String username;
 	private String email;
 	private String Password;
 	

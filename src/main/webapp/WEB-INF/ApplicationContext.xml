@@ -29,8 +29,8 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 	      class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 	      <property name="driverClassName" value="org.h2.Driver"/>
 	      <property name="url" value="jdbc:h2:~/techworld;;AUTO_SERVER=TRUE;"/>
-	      <property name="username" value="sa"/>
-	      <property name="password" value=""/>
+	      <property name="username" value="admin"/>
+	      <property name="password" value="admin"/>
 	   </bean>
         
         <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
