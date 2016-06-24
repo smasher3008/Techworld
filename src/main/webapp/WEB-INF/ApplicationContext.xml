@@ -11,7 +11,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 	<mvc:resources mapping="/resources/**" location="/resources/" />
   
     <context:component-scan base-package="com.Techworld" />
-    <!-- <context:component-scan base-package="com.furnit.model" /> -->
+    
     
     
     
@@ -46,6 +46,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 		<list>
 		<value>com.Techworld.model</value>
 		<value>com.Techworld.SupplierModel</value>
+		<value>com.Techworld.User</value>
 		</list>
 		</property>
 	</bean>	
