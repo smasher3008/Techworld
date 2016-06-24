@@ -25,22 +25,14 @@
 	 
 	Password *:<p> <input type="password" name="pwd" /></p>
 	 
-	Surname *:<p> <input type="surname" name="surname" /></p>
-	 
-	Other Names :<p> <input type="other names" name="names" /></p>
-	 
-	Date of Birth *:<p> <input type="date of birth" name="dob" /></p>
-	 
 	Email *:<p> <input type="email" name="email" /></p>
 	 
-	Telephone:<p> <input type="telephone" name="tel" /></p>
+	Contact no.:<p> <input type="telephone" name="tel" /></p>
 	 
 	Address *: <p><input type="address" name="add" /></p>
 	 
-	Post Code *:<p> <input type="postcode" name="ptc" /></p>
-	 
-	
 	<p><input type="submit" value="Submit" /></p>
+	\
 	<p><p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p></p>
 	</div>
 	</form>

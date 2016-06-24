@@ -46,7 +46,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 		<list>
 		<value>com.Techworld.model</value>
 		<value>com.Techworld.SupplierModel</value>
-		<value>com.Techworld.User</value>
+		<value>com.Techworld.UserModel</value>
 		</list>
 		</property>
 	</bean>	

@@ -1,4 +1,4 @@
-package UserModel;
+package com.Techworld.UserModel;
 
 import java.io.Serializable;
 
@@ -15,8 +15,8 @@ public class User implements Serializable {
 	@Id @GeneratedValue(strategy=GenerationType.AUTO)
 	private int UserId;
 	
-	private Boolean active;
-	private Role "1" ;
+	private boolean Active=true;
+	private int Role=1 ;
 	private String name;
 	
 	
