@@ -4,10 +4,14 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-
+import com.Techworld.UserModel.User;
+import com.Techworld.UserModel.UserService;
 import com.Techworld.model.ProductService;
 
 
@@ -16,7 +20,7 @@ public class frontcontoller
 {
 	@Autowired
 	ProductService ps;
-	//UserService us;
+	UserService us;
 	
 	@RequestMapping("/")
 	public String index()
@@ -26,13 +30,20 @@ public class frontcontoller
 		return "index";
 	}
 	
-	@RequestMapping("/SignUp")
-	public String signup()
-	{
-		
-		
-		return "SignUp";
-	}
+	@RequestMapping(value = "/SignUp", method = RequestMethod.GET)
+	   public ModelAndView SignUpform(ModelMap model) {
+	      return new ModelAndView("SignUp", "command", new User());
+	   }
+	
+	@RequestMapping(value = "/SignUp", method = RequestMethod.POST)
+	   public String SignUpSubmit(@ModelAttribute("SignUp")User user, 
+	   ModelMap model) {
+	      model.addAttribute("name", user.getName());
+	      model.addAttribute("username", user.getUsername());
+	      model.addAttribute("id", user.getUserId());
+	      
+	      return "result";
+	   }
 	
 	@RequestMapping("/signin")
 	public String signin()
