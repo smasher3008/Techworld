@@ -38,16 +38,22 @@
 	<p><p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p></p>
 	</div>
 	</form>
-	<form:form method="POST" action="" >
+	<form:form method="POST" action="" modelAttribute="User">
    <table>
     <tr>
         <td><form:label path="name">Name</form:label></td>
         <td><form:input path="name" /></td>
     </tr>
     <tr>
-        <td><form:label path="username">username</form:label></td>
+        <td><form:label path="username">Username</form:label></td>
         <td><form:input path="username" /></td>
     </tr>
+    <tr>
+        <td><form:label path="UserId">UserId</form:label></td>
+        <td><form:input path="UserId" /></td>
+    </tr>
+    
+    
     <tr>
         <td><form:label path="password">password</form:label></td>
         <td><form:input path="password" /></td>

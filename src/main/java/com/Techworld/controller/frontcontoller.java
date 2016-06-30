@@ -31,9 +31,14 @@ public class frontcontoller
 	}
 	
 	@RequestMapping(value = "/SignUp", method = RequestMethod.GET)
-	   public ModelAndView SignUpform(ModelMap model) {
-	      return new ModelAndView("SignUp", "command", new User());
-	   }
+	   	public ModelAndView SignUpform(ModelMap model)
+		{
+			ModelAndView mav = new ModelAndView("SignUp");
+			
+			mav.addObject("User", new User());
+			
+	    	return mav;
+		}
 	
 	@RequestMapping(value = "/SignUp", method = RequestMethod.POST)
 	   public String SignUpSubmit(@ModelAttribute("SignUp")User user, 
@@ -41,7 +46,9 @@ public class frontcontoller
 	      model.addAttribute("name", user.getName());
 	      model.addAttribute("username", user.getUsername());
 	      model.addAttribute("id", user.getUserId());
-	      
+	      model.addAttribute("password", user.getPassword());
+	      model.addAttribute("email", user.getEmail());
+	      model.addAttribute("contactno", user.getContactno());
 	      return "result";
 	   }
 	

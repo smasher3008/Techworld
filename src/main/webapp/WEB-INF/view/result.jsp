@@ -1,7 +1,7 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-    <title>Spring MVC Form Handling</title>
+    <title>Registration Successful</title>
 </head>
 <body>
 
@@ -15,10 +15,25 @@
         <td>Username</td>
         <td>${username}</td>
     </tr>
-    <tr>
+        <tr>
         <td>ID</td>
         <td>${id}</td>
     </tr>
+    
+    <tr>
+        <td>ContactNumber</td>
+        <td>${contactno}</td>
+    </tr>
+	    <tr>
+        <td>Password</td>
+        <td>${password}</td>
+    </tr>
+        <tr>
+        <td>E-mail</td>
+        <td>${email}</td>
+    </tr>
+    
+	    
 </table>  
 </body>
 </html>
