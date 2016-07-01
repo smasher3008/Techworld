@@ -94,6 +94,20 @@ public class User implements Serializable {
 		this.name = name;
 	}
 
-	
+	public boolean isActive() {
+		return Active;
+	}
+
+	public void setActive(boolean active) {
+		Active = active;
+	}
+
+	public int getRole() {
+		return Role;
+	}
+
+	public void setRole(int role) {
+		Role = role;
+	}	
 
 }

@@ -1,1 +1,16 @@
+com\Techworld\SupplierModel\SupplierService.class
+com\Techworld\UserModel\UserServiceImpl.class
+com\Techworld\model\ProductDAOImpl.class
+com\Techworld\SupplierModel\SupplierDAOImpl.class
 com\Techworld\controller\frontcontoller.class
+com\Techworld\UserModel\UserDao.class
+com\Techworld\SupplierModel\SupplierDAO.class
+com\Techworld\model\ProductDAO.class
+com\Techworld\UserModel\UserService.class
+com\Techworld\SupplierModel\Supplier.class
+com\Techworld\model\ProductService.class
+com\Techworld\UserModel\UserDAOimpl.class
+com\Techworld\UserModel\User.class
+com\Techworld\model\ProductServiceImpl.class
+com\Techworld\model\Product.class
+com\Techworld\SupplierModel\SupplierSeriviceImpl.class

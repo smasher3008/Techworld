@@ -84,6 +84,7 @@
 		     <li><a href="SignUp"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
 		     <li><a href="signin"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
 		     <li><a href="allproducts"><span class="glyphicon glyphicon-allproducts"></span>All Products</a></li>
+		     <li><a href="NewProduct"><span class="glyphicon glyphicon-allproducts"></span>Product Entry</a></li>
 		    
 		   </ul>
 		   

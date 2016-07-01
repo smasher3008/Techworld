@@ -1,5 +1,7 @@
 package com.Techworld.controller;
 
+import java.util.List;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.Techworld.UserModel.User;
 import com.Techworld.UserModel.UserService;
+import com.Techworld.model.Product;
 import com.Techworld.model.ProductService;
 
 
@@ -20,6 +23,8 @@ public class frontcontoller
 {
 	@Autowired
 	ProductService ps;
+	
+	@Autowired
 	UserService us;
 	
 	@RequestMapping("/")
@@ -41,60 +46,82 @@ public class frontcontoller
 		}
 	
 	@RequestMapping(value = "/SignUp", method = RequestMethod.POST)
-	   public String SignUpSubmit(@ModelAttribute("SignUp")User user, 
-	   ModelMap model) {
-	      model.addAttribute("name", user.getName());
-	      model.addAttribute("username", user.getUsername());
-	      model.addAttribute("id", user.getUserId());
-	      model.addAttribute("password", user.getPassword());
-	      model.addAttribute("email", user.getEmail());
-	      model.addAttribute("contactno", user.getContactno());
-	      return "result";
+	public ModelAndView SignUpSubmit()
+	{
+		ModelAndView mav = new ModelAndView("SignUp");
+		
+		mav.addObject("User", new User());
+		
+	    return mav;
+	   }
+	
+	@RequestMapping(value = "/InsertUser", method = RequestMethod.POST)
+	public ModelAndView InsertUser(@ModelAttribute("User")User u)
+	{
+		us.insert(u);
+		
+		ModelAndView mav = new ModelAndView("SignUp");
+		
+		mav.addObject("User", new User());
+		
+	    return mav;
+	   }
+	
+	@RequestMapping(value = "/NewProduct", method = RequestMethod.GET)
+   	public ModelAndView ProductSubmit()
+	{
+		ModelAndView mav = new ModelAndView("NewProduct");
+		
+		mav.addObject("Product", new Product());
+		
+    	return mav;
+	}
+	
+	
+	
+	@RequestMapping(value = "/InsertProduct", method = RequestMethod.POST)
+	public ModelAndView InsertProduct(@ModelAttribute("Product")Product p)
+	{
+		ps.insert(p);
+		
+		ModelAndView mav = new ModelAndView("NewProduct");
+		
+		mav.addObject("Product", new Product());
+		
+	    return mav;
 	   }
 	
 	@RequestMapping("/signin")
 	public String signin()
 	{
-		
-		
 		return "signin";
 	}
 	
 	@RequestMapping("/allproducts")
 	public ModelAndView allproducts()
 	{
+		
+		List<Product> list = ps.list();
+		
+		String temp = "[";
+		
+		for( Product p:list )
+		{
+			temp += p.toString().replaceAll("\\\\","/") + ",";
+		}
+		
+		if( temp.length() >1)
+				temp = temp.substring(0, temp.length()-1);
+		
+			temp +="]" ;
+		
+			System.out.println(temp);
+		
 		ModelAndView mav = new ModelAndView();
 		
-		JSONArray jsonarr = new JSONArray();
 		
-		JSONObject json;
 		
-		json = new JSONObject();
-		json.put("Name", "Iphone");
-		json.put("Price", "53000 INR");
-		json.put("Image", "resources\\image\\img 05.jpg");
-		jsonarr.add(json);
-		
-		json = new JSONObject();
-		json.put("Name", "Google Glass");
-		json.put("Price", "96,000 INR");
-		json.put("Image", "resources\\image\\img 04.jpg");
-		jsonarr.add(json);
-		
-		json = new JSONObject();
-		json.put("Name", "Dr. Dre beats");
-		json.put("Price", "13,999 INR");
-		json.put("Image", "resources\\image\\img 02.jpg");
-		jsonarr.add(json);
-		
-		json = new JSONObject();
-		json.put("Name", "SkullCandy Aviators");
-		json.put("Price", "53,000 INR");
-		json.put("Image", "resources\\image\\img 10.jpg");
-		jsonarr.add(json);
-		System.out.println(jsonarr);
-		
-		mav.addObject("JSONData", jsonarr.toString());
+		mav.addObject("JSONData",temp);
 		
 		return mav;
 	}

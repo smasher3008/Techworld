@@ -1,6 +1,10 @@
 package com.Techworld.model;
 
+import java.util.List;
+
 public interface ProductDAO {
+	
+	public List<Product> list();
 	
 	public void insert(Product p);
 	

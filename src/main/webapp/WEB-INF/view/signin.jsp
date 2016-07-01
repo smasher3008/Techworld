@@ -26,7 +26,7 @@
 					<h1>Explore TECHWORLD</h1>
 			
 			
-			Username *: <p><input type="username" name="username" /></p>
+			User name *: <p><input type="username" name="username" /></p>
 			 
 			Password *:<p> <input type="password" name="pwd" /></p>
 			 
