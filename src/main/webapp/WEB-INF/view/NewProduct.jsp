@@ -5,8 +5,35 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel ="stylesheet"
+		href="resources/css/bootstrap.min.css">
+		<link rel ="stylesheet">
+		
+		
+		<script src="resources/js/jquery-1.11.1.min.js"></script>
+		<script src="resources/js/bootstrap.min.js"></script>
+		<script src="resources/js/angular.min.js"></script>
+		
 <title>Insert title here</title>
 </head>
+
+
+<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">techWORLD</a>
+		    </div>
+	
+		   
+		   
+		     <l<%=  %>i><a href="index.jsp"><span class="glyphicon glyphicon-allproducts"></span>Home</a></li>
+	       
+		   
+		</div>
+	</nav>
+	
+	
 <body background="resources/image/bg9.jpg">
 
 

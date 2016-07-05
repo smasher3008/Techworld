@@ -23,6 +23,12 @@ public class ProductServiceImpl implements ProductService {
 		// TODO Auto-generated method stub
 		return pdao.list();
 	}
+    
+	@Transactional
+	public void delete(Product pd) {
+		// TODO Auto-generated method stub
+		pdao.delete(pd);
+	}
 	
 	
 

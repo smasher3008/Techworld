@@ -26,6 +26,13 @@ public class ProductDAOImpl implements ProductDAO{
 			// TODO Auto-generated method stub
 			return sessionFactory.getCurrentSession().createQuery("from Product").list();
 		}
+
+		
+		@Transactional
+		public void delete(Product pd) {
+			// TODO Auto-generated method stub
+			sessionFactory.getCurrentSession().delete(pd);
+		}
 	
 
 }

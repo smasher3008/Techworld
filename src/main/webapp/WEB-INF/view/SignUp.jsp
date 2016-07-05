@@ -39,35 +39,35 @@
 	</div>
 	</form>
 	<form:form method="POST" action="InsertUser" modelAttribute="User">
-   <table>
+   <table align = "center">
     <tr>
-        <td><form:label path="name">Name</form:label></td>
+        <td><form:label path="name"  style="font-family:Comic Sans MS">Name</form:label></td>
         <td><form:input path="name" /></td>
     </tr>
     <tr>
-        <td><form:label path="username">Username</form:label></td>
+        <td><form:label path="username"  style="font-family:Comic Sans MS">Username</form:label></td>
         <td><form:input path="username" /></td>
     </tr>
     
     <tr>
-        <td><form:label path="password">password</form:label></td>
+        <td><form:label path="password"  style="font-family:Comic Sans MS">password</form:label></td>
         <td><form:input path="password" /></td>
     </tr>
     <tr>
-        <td><form:label path="contactno">contactno</form:label></td>
+        <td><form:label path="contactno"  style="font-family:Comic Sans MS">contactno</form:label></td>
         <td><form:input path="contactno" /></td>
     </tr>
     <tr>
-        <td><form:label path="email">email</form:label></td>
+        <td><form:label path="email"  style="font-family:Comic Sans MS">email</form:label></td>
         <td><form:input path="email" /></td>
     </tr>
     <tr>
-        <td><form:label path="address">address</form:label></td>
+        <td><form:label path="address"  style="font-family:Comic Sans MS">address</form:label></td>
         <td><form:input path="address" /></td>
     </tr>
     <tr>
         <td colspan="2">
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Submit"  style="font-family:Comic Sans MS"/>
         </td>
     </tr>
 </table>  

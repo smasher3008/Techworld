@@ -80,10 +80,10 @@ public class frontcontoller
 	
 	
 	@RequestMapping(value = "/InsertProduct", method = RequestMethod.POST)
-	public ModelAndView InsertProduct(@ModelAttribute("Product")Product p)
+	public ModelAndView InsertProduct(@ModelAttribute("Product")Product p,Product pd)
 	{
 		ps.insert(p);
-		
+		ps.delete(pd);
 		ModelAndView mav = new ModelAndView("NewProduct");
 		
 		mav.addObject("Product", new Product());
@@ -97,8 +97,8 @@ public class frontcontoller
 		return "signin";
 	}
 	
-	@RequestMapping("/allproducts")
-	public ModelAndView allproducts()
+	@RequestMapping("/AllProducts")
+	public ModelAndView AllProducts()
 	{
 		
 		List<Product> list = ps.list();

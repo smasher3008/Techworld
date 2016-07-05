@@ -8,4 +8,6 @@ public interface ProductService {
 
 	public void insert(Product p);
 
+	public void delete(Product pd);
+
 }
