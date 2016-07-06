@@ -16,6 +16,9 @@
 
 <body ng-app="mymodule"  background="resources/image/backgrpund 8.jpg" width=100% height=100%>
 
+		<%@ include file = "Head.jsp" %>
+		
+		
 		<div data-ng-controller="mycontroller">
 				
 				<h1>Search through the Sea of Bytes..!!!</h1>

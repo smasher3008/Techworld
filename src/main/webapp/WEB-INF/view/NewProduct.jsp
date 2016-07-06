@@ -15,11 +15,11 @@
 		<script src="resources/js/bootstrap.min.js"></script>
 		<script src="resources/js/angular.min.js"></script>
 		
-<title>Insert title here</title>
+<title>Product Entry</title>
 </head>
 
 
-<nav class="navbar navbar-inverse">
+<%-- <nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
 		      <a class="navbar-brand" href="#">techWORLD</a>
@@ -27,14 +27,17 @@
 	
 		   
 		   
-		     <l<%=  %>i><a href="index.jsp"><span class="glyphicon glyphicon-allproducts"></span>Home</a></li>
+		     <l<%=  %>i><a href="index"><span class="glyphicon glyphicon-allproducts"></span>Home</a></li>
 	       
 		   
 		</div>
 	</nav>
+ --%>	
 	
+<body background="resources/image/bg9jpg.jpg">
 	
-<body background="resources/image/bg9.jpg">
+		<%@ include file = "Head.jsp" %>
+		
 
 
 	<form:form method="POST" action="InsertProduct" modelAttribute="Product">

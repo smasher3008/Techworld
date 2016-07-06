@@ -30,7 +30,7 @@
 		    <ul class="nav navbar-nav">
 		    
 		
-		<li class="active"><a href="#">Home</a></li>
+		<li class="active"><a href="#index">Home</a></li>
 		<li><a href="#">accessories</a></li>
 		<li><a href="#">Phones</a></li> 
 		<li><a href="#">Laptop</a></li>

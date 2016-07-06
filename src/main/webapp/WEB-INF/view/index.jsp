@@ -57,9 +57,9 @@
 	</style>
 			</head>
 
+<%@ include file = "Head.jsp" %>
 
-
-
+<!-- 
 		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
@@ -91,7 +91,7 @@
 		   </ul>
 		   
 		</div>
-	</nav>
+	</nav> -->
 		
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			

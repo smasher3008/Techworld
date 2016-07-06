@@ -16,6 +16,9 @@
 	
 	<body background="resources/image/Background-Images.jpg">
 	
+		<%@ include file = "Head.jsp" %>
+		
+	
 	<form tag="Create Login">
 	<div align="center">
 	<font color="yellow">

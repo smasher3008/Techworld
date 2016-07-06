@@ -19,7 +19,9 @@
 		</head>
 	
 		
-			<body background="resources/image/background5.jpg">
+			<body background="resources/image/bg11.jpg">
+			
+		
 			
 				<c:if test="${not empty error}">
 			<div class="error">${error}</div>
@@ -33,10 +35,12 @@
 			
 							<div align="center">
 					
-					<h1>Explore TECHWORLD</h1>
+					<h1 font-family: ""Courier New", Courier, monospace">Explore Techworld</h1>
+						
+						<%@ include file = "Head.jsp" %>
 			
 			
-			User name *: <p><input type="username" name="username" /></p>
+			User name *: <p  font-family:"Courier New", Courier, monospace><input type="username" name="username" /></p>
 			 
 			Password *:<p> <input type="password" name="pwd" /></p>
 			 
