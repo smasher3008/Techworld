@@ -13,7 +13,7 @@
 
  	 <context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/ApplicationContext.xml</param-value>
+		<param-value>/WEB-INF/ApplicationContext.xml , /WEB-INF/SpringSecurity.xml</param-value>
 	</context-param> 
 	
 	 <listener>
